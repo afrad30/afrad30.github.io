@@ -1,2 +1,3 @@
-# Dictionary
-Irregular verb dictionary with visual example
+# todo
+toto app
+new input

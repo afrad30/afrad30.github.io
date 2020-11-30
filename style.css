@@ -1,107 +1,60 @@
 body{
-    margin:0px 0px 0px 0px;
-    padding:0 ;
-    height: 100%;
-    box-sizing: border-box;
+  background-color:black;
 }
-/***** Top *****/
-.header{
-        height:60px;
-        width: 100%;
-        background-color: rgba(25, 96, 180, 1);
-        margin-top: 0px;
-        margin-bottom: 0px;
-        text-align: center;
-        padding-top:30px;
-        color: whitesmoke;
+.container {
+  position: absolute;
+  width: 35%;
+  margin-left: 35%;
+  border: 2px solid black;
+  background-color: blueviolet;
 }
-/****** Container ******/
-.container{
-    margin: 0px 0px 0px 0px;
-    display: grid;
-    grid-column-gap:0;
-    grid-template-columns:18% 57% 25%;
+.title {
+  text-align: center;
+  color: whitesmoke;
 }
-.left,.middle,.right{
-    margin-top: 0px;
-    padding: 0px 0px 0px 0px;
-    
+.input {
+  margin-left: 12%;
+  width: 60%;
+  border-radius: 5px;
+  padding-left: 10px;
+  height: 25px;
+  border: .5px solid whitesmoke;
 }
-/****** Left Side *****/
-.left button{
-    width: 100%;
+.additem{
+  font-size: 16px;
+  border-radius:5px;
+  border:.5px solid blueviolet;
+  background-color:rgb(226, 220, 231);
+  height: 25px;
+  padding:3px 10px 3px  10px;
 }
-ul{
-list-style-type: none;
-font-size: 16px;
-font-weight: 100;
-margin-top: 0px;
-margin-left:0px;
+li {
+  list-style-type: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  width: 80%;
+  height: 20px;
+  background-color: whitesmoke;
 }
-li{
-    margin-left: 0px;
+.text {
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  font-size: 18px;
 }
+.button-done,
+.button-remove {
+  float: right;
+  margin-right: 10px;
+  font-size: 14px;
+  background-color:rgb(219, 219, 233) ;
+  border:.5px solid rgb(251, 250, 252);
+  border-radius:10px;
 
-.left{
-    overflow: scroll;
-    background-color: rgb(228, 235, 236);
-}
-.left button{
-    height: 25px;
-}
-.active, .left button:hover{
-    background-color: blue;
-}
-.left-title,.right-title{
-    text-align: center;
-    margin-top: 10px;
-}
-/***** Right Side *****/
-.right{
-    background-color:rgb(228, 235, 236);
-}
-.progress{
-    float: left;
-    background-color: rgb(161, 219, 174);
-    border-radius: 3px;
-    margin:0px 0px 8px 8px;
-    padding: 5px 5px 0px 5px; 
-    height: 25px;
-}
-.progress span{
-    margin-right: 7px;
-    font-size: 18px;
-
-
-}
-/****** Midddle ******/
-.input{
-    margin-left:20%;
-    margin-top: 20px;
-    padding-left: 10px;
-    border: 2px solid rgb(20, 65, 155);
-    border-radius:10px;
-    height: 25px;
-    width: 60%;
-}
-.btn-search{
-   margin-left: 15px;
-   height: 29px;
-   width:70px;
-   font-size: 16px;
-   border-radius: 3px;
-   color:whitesmoke;
-   background-color: rgb(87, 102, 240);
-}
-
-.middle h4,.button-learnt{
-    display:none;
-}
-.button-learnt{
-    background-color: maroon;
-    color: whitesmoke;
-    height: 25px;
-    padding: 2px 5px 2px 5px ;
-    border: 1px solid whitesmoke;
-    border-radius: 5px;
 }

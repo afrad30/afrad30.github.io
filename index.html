@@ -1,56 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    </head>
+    <title>Todo App</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+</head>
+
 <body>
-    <h1 class="header">Dictionary.co</h1>
     <div class="container">
-      <div class="left">
-          <h2 class="left-title">Categories</h2>
-          <button class="adjective" id="adjective">Adjective</button>
-          <ul class="adjective-list">
-            <li>Adorable</li>
-            <li>Attractive</li>
-            <li>Alluring</li>
-            <li>Beautiful</li>
-            <li>Bewildered</li>
-         </ul>
-          <button class="verb" id="button-left">Verb</button>
-          <ul class="verb-list">
-            <li>Adorable</li>
-            <li>Attractive</li>
-            <li>Alluring</li>
-         </ul>
-          <button class="irregularverb" id="button-left">Irregular-verb</button>
-          <ul class="irregularverb-list">
-             <li>Adorable</li>
-            <li>Attractive</li>
-          </ul>
-        </div>
+           <h2 class="title">Todo app</h2>
+           <input type="text" class="input" placeholder="write here">
+           <button class="additem">add</button>
+       <ul class="itemlist">
+          <li class="item">
+            <span class="text">add item</span>
+            <button class="button-done">done</button>
+            <button class="button-remove">remove</button>
+          </li>
+       </ul>
+       </div>
+    <script type="text/javascript" src="app.js"></script>
 
-        <div class="middle">
-          <input type="text" class="input" placeholder="Search ..."><br>
-          <!-- <button class="btn-search">Search</button> -->
-          <!-- <button class="addtoprogressbar">add to progress bar</button> -->
-          <h4 class="hidden">PartsOfSpeech</h4>
-          <p class="partsofsp"></p>
-          <h4 class="hidden">Definitions</h4>
-          <p class="def"></p>
-          <p class="def1"></p>
-          <h4 class="hidden">Example</h4>
-          <p class="ex"></p>
-          <button class="hidden button-learnt">learnt</button>
-        </div>
-
-        <div class="right">
-             <h2 class="right-title">Progress bar</h2>
-             <div class="progressbar"></div>
-        </div>
-    </div>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="app.js" type="module"></script>
 </body>
+
 </html>
