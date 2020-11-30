@@ -1,1 +1,2 @@
-# afrad30.github.io
+# Dictionary
+Irregular verb dictionary with visual example

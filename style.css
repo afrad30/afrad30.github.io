@@ -1,56 +1,107 @@
-*{
-    margin: 0rem;
-    padding:0;
+body{
+    margin:0px 0px 0px 0px;
+    padding:0 ;
+    height: 100%;
     box-sizing: border-box;
 }
-body{
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 400;
-    /* background-color: powderblue; */
+/***** Top *****/
+.header{
+        height:60px;
+        width: 100%;
+        background-color: rgba(25, 96, 180, 1);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        padding-top:30px;
+        color: whitesmoke;
 }
-
+/****** Container ******/
 .container{
-    margin-left:0px;
-    padding-left:0px;
-    height:500px;
-    width:1050px;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%) ;
+    margin: 0px 0px 0px 0px;
+    display: grid;
+    grid-column-gap:0;
+    grid-template-columns:18% 57% 25%;
 }
-.heading{
-    font-size:26px;
-    padding:px;
+.left,.middle,.right{
+    margin-top: 0px;
+    padding: 0px 0px 0px 0px;
+    
+}
+/****** Left Side *****/
+.left button{
+    width: 100%;
+}
+ul{
+list-style-type: none;
+font-size: 16px;
+font-weight: 100;
+margin-top: 0px;
+margin-left:0px;
+}
+li{
+    margin-left: 0px;
+}
+
+.left{
+    overflow: scroll;
+    background-color: rgb(228, 235, 236);
+}
+.left button{
+    height: 25px;
+}
+.active, .left button:hover{
+    background-color: blue;
+}
+.left-title,.right-title{
     text-align: center;
-    width:98%;
-    height:45px;
-    margin-bottom:0px;
-    margin-left:0px;
-    margin-right:0px;
-    text-shadow: 1px 1px dimgray;
-    background-color: lightgreen;
+    margin-top: 10px;
 }
-
-.product-1,.product-2,.product-3,.cost-cal{
-    box-shadow:1px 2px dimgray;
-    width:250px;
-    /* height:; */
-    float:left;
-    margin-left:5px;
-/* padding:10px; */
-    background-color:powderblue;
-    /* position:absolute; */
-    border:.5px solid rgba(0, 0, 0, 0.2);
+/***** Right Side *****/
+.right{
+    background-color:rgb(228, 235, 236);
+}
+.progress{
+    float: left;
+    background-color: rgb(161, 219, 174);
     border-radius: 3px;
+    margin:0px 0px 8px 8px;
+    padding: 5px 5px 0px 5px; 
+    height: 25px;
+}
+.progress span{
+    margin-right: 7px;
+    font-size: 18px;
+
+
+}
+/****** Midddle ******/
+.input{
+    margin-left:20%;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: 2px solid rgb(20, 65, 155);
+    border-radius:10px;
+    height: 25px;
+    width: 60%;
+}
+.btn-search{
+   margin-left: 15px;
+   height: 29px;
+   width:70px;
+   font-size: 16px;
+   border-radius: 3px;
+   color:whitesmoke;
+   background-color: rgb(87, 102, 240);
 }
 
-img{
-    padding:0px;
-    width:100%;
-    height:220px;
-    border-bottom:1px solid rgba(0, 0, 0, 0.2);   
+.middle h4,.button-learnt{
+    display:none;
 }
-.cost-cal{
-    height:260px
+.button-learnt{
+    background-color: maroon;
+    color: whitesmoke;
+    height: 25px;
+    padding: 2px 5px 2px 5px ;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
 }
